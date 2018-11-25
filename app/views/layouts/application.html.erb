@@ -10,8 +10,18 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <div id="container">
+      <div id="container-top">
+        <%= render 'shared/header' %>
+      </div>
+      <div id="container-body">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+        <%= yield %>
+      </div>
+      <div id="container-bottom">
+        <%= render 'shared/footer' %>
+      </div>
+    </div>
   </body>
 </html>
